@@ -13,31 +13,32 @@
 		<nav>
 			<div class="title">Андрей Браун</div>
 			<ul class="menu">
-				<li>Обо мне</li>
-				<li>Услуги</li>
-				<li>Кейсы</li>
-				<li>Прайс</li>
-				<li>Отзывы</li>
-				<li>Контакты</li>				
+				<li><a href = "#">Обо мне</a></li>
+				<li><a href = "#">Услуги</a></li>
+				<li><a href = "#">Кейсы</a></li>
+				<li><a href = "#">Прайс</a></li>
+				<li><a href = "#">Отзывы</a></li>
+				<li><a href = "#">Контакты</a></li>				
 			</ul>
 		</nav>
 	</header>
 
-	<div class="main_cont">
+
+	<section class="main"> 
 		<div class="maint">
 			<h1>Привет<br>Я Андрей Браун</h1>
 			<h4>Фулл стек веб - разроботчик</h4>
-			<input type="submit" value="Обо мне">
-			<input type="submit" value="Мои работы">
+			<input type="Button" value="Обо мне">
+			<input type="Button" value="Мои работы">
 		</div>
-	</div>
+	</section>
 	
 	<div class="information1">
 			<h3>Обо мне</h3>
 			<img class="line" src="img/черта заголовка.png" alt=""> <br>
 			<img id="FotoB" src="img/фотка1.png">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-			<input type="submit" value="Скачать резюме">
+			<input type="Button" value="Скачать резюме">
 	</div>
 
 
@@ -47,34 +48,33 @@
 				<h3>Что я умею</h3>
 				<img class="line" src="img/черта заголовка.png" alt="">
 			</div>
-			<div class="VebO">
-				<div class="Veb">
+			<ul class="VebO">
+				<li>
 						<img src="img/ноут.png" alt="">
 						<h5>Веб-дизайн</h5>
 						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-				</div>
+				</li>
 
-				<div class="Veb">
+				<li>
 						<img src="img/знак.png" alt="">
 						<h5>Разработка</h5>
 						<p>Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.</p>
-				</div>
+				</li>
 
 
-				<div class="Veb">
+				<li>
 						<img src="img/ракета.png" alt="">
 						<h5>Сео-Оптимизация</h5>
 						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-				</div>
+				</li>
 
 
-
-				<div class="Veb">
+				<li>
 						<img src="img/граммофон.png" alt="">
 						<h5>Маркетинг</h5>
 						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .</p>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 
@@ -95,7 +95,7 @@
 				<h4>WEBSITE:</h4>
 				<p>http://www.somedomain.com</p>
 			</div>
-			<input type="submit" value="VISIT LIVE SITE">
+			<input type="Button" value="VISIT LIVE SITE">
 		</div>
 		<div class="caseProj">
 		<h5>Название проекта</h5>
@@ -125,8 +125,10 @@
 		</select>
 		<img src="img/Линия.png" alt="Линия">
 		<div class="Results">
-		<p>Сроки</p>
-		<p>Стоимость</p>
+		<p class="Srok">Сроки</p>
+			<p class = "zero">0</p>
+		<p class="Stoimost">Стоимость</p>
+		<p class = "zero">0</p>
 		</div>
 		</div>
 	</div>
@@ -167,7 +169,7 @@
 	<div class="reviews">
 		
 		<h3>Отзывы</h3>
-		<img src="img/черта заголовка.png" alt="">
+		<img id = "Line" src="img/черта заголовка.png" alt="">
 		<br>
 		<img class="photo" src="img/фотка.png" alt="">
 
@@ -216,7 +218,7 @@
 				<input type="txet" class="Svaz1" name="text_name" value="" placeholder="Имя">
 				<input type="txet" class="Svaz2" name="text_name" value="" placeholder="Email">
 				<textarea name="Message" id="TextAre" placeholder="Сообщение"></textarea>
-				<input class="Button" type="submit" value="Отправить">
+				<input class="Button" type="Button" value="Отправить">
 			</div>
 			</form>
 			

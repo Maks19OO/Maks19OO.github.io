@@ -1,8 +1,18 @@
+@font-face {
+	font-family: 'Franklin Got';
+	src: url('../fonts/ofont.ru_Franklin Gothic Medium.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Franklin Gothic Medium.woff') format('woff'), url('../fonts/ofont.ru_Franklin Gothic Medium.ttf') format('truetype'), url('../fonts/ofont.ru_Franklin Gothic Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 nav {
 	width: 100%;
 	height: 60px;
 	background: #344051;
-	font-family: Arial, sans-serif;
+	font-family: Franklin Got, sans-serif;
 	position: fixed;
 	z-index: 2;
 }
@@ -11,19 +21,19 @@ nav {
 	font-size: 28px;
 	line-height: 60px;
 	color: #f4f4f5;
-	padding-left:390px;
 	float: left;
 	animation: comming 2s ease;
 }
 
 .menu {
-	padding-left: 432px ;
 	float: left;
 }
 
+
+
 .menu li {
 	float:left;
-	font-size: 20px;
+	font-size: 14px;
 	color:#f4f4f5;
 	padding-right: 40px;
 	line-height: 60px;
@@ -35,10 +45,13 @@ nav {
 .menu li a {
 	color:#f4f4f5;
 	display: inline-block;
+	text-decoration:none;
 
 }
 
-
+.white-btn {
+	color:white;
+}
 .main {
 	width: 100%;
 	height:100%;
@@ -47,17 +60,19 @@ nav {
 
 .maint {
 	float:left;
-	margin: 432px 0px 0px 404px;
 	color: #2c384a;
 	text-align: center;
+	width: 100%;
 	animation: maintA 1s ease forwards;
 	opacity: 0;
 	animation-delay: 4s;
 }
 
 .maint>h1 {
-	font-size:60px;
-	font-weight:bold;
+	font-size:72px;
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+
 }
 
 .maint>h4 {
@@ -83,7 +98,7 @@ nav {
 
 .information1 {
 	width: 100%;
-	height: 720px;
+	height: 100%;
 	text-align: center;
 	
 }
@@ -92,7 +107,6 @@ nav {
 	font-size: 35px;
 	color: #263244;
 	text-align: center;
-	margin-top: 110px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -108,13 +122,12 @@ nav {
 }
 
 .information1 p {
-	margin: 25px 600px;	
 	font-size:17px;
 	color:#3f495a;
 	text-align: left;
 }
 
-.information1>input {
+.information1 input {
 	margin-top:15px;
 	height: 30px;
 	padding: 0px 10px 0px 32px;
@@ -134,12 +147,12 @@ nav {
 }
 
 .info2t {
-	padding: 100px 420px;
 	text-align: center;
+	flex-grow: 1;
 }
 
 .info2t h3 {
-	font-size: 25px;
+	font-size: 33px;
 	color: #263244;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -154,20 +167,21 @@ nav {
 }
 
 .VebO {
+	width: 100%;
 	float:left;
-	margin-top: 105px;
 }
 
 .VebO li {
-	max-width: 200px;
+	width: 25%;
 	float:left;
-	margin: 0px 25px;
-	font-size: 13px;
+	font-size: 17px;
 	color:#3f495a;
 	font-weight: bold;
-	opacity: 0;
-	animation: comming 2s forwards;
+/*	opacity: 0; 
+	animation: comming 2s forwards; */
 }
+
+
 
 .VebO li img {
 	height:40px;
@@ -175,7 +189,7 @@ nav {
 }
 
 .VebO li h5 {
-	font-size: 15px;
+	font-size: 19px;
 	color:#cf7600;
 	font-weight: bold;
 	margin-bottom: 22px;
@@ -561,14 +575,40 @@ nav {
 @keyframes maintA {
 	from{
 		opacity: 0;
-		margin-left: -100px;
 	}
 	to {
 		opacity: 1;
-		margin-left:404px;
 	}
 }
 
+
+@media (max-width: 991px) {
+	.VebO li {
+		font-size: 11px;
+	}
+	.VebO li h5 {
+		font-size: 12px;
+	}
+	.maint, .maint h4, .maint input {
+		color:#fff;
+		position: relative;
+		z-index: 1;
+	}
+
+	.main {
+		position: relative;
+	}
+
+	.main:after {
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		background: rgba(0,0,0,0.4)
+	}
+}
 
 .menu li:nth-child(1) {
 	animation-delay: 0.5s;
@@ -643,3 +683,9 @@ nav {
 	background-color: #cecece;
 
 }
+
+
+.efw {
+	align-items: 
+}
+

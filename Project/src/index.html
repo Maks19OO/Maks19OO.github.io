@@ -4,77 +4,120 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home work</title>
-	<link rel="stylesheet" href="css/reset.css ">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 
 	<header>
 		<nav>
-			<div class="title">Андрей Браун</div>
-			<ul class="menu">
-				<li><a href = "#">Обо мне</a></li>
-				<li><a href = "#">Услуги</a></li>
-				<li><a href = "#">Кейсы</a></li>
-				<li><a href = "#">Прайс</a></li>
-				<li><a href = "#">Отзывы</a></li>
-				<li><a href = "#">Контакты</a></li>				
-			</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-lg-3 col-7"><div class="title">Андрей Браун</div></div>
+					<div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">			
+							<ul class="menu">
+								<li><a href = "#">Обо мне</a></li>
+								<li><a href = "#">Услуги</a></li>
+								<li><a href = "#">Кейсы</a></li>
+								<li><a href = "#">Прайс</a></li>
+								<li><a href = "#">Отзывы</a></li>
+								<li><a href = "#">Контакты</a></li>				
+							</ul>
+					</div>
+				<div class="btn-group col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+  <button type="button" class="btn btn-outline-secondary dropdown-toggle white-btn" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#">Услуги</a></li>
+    <li><a class="dropdown-item" href="#">Кейсы</a></li>
+    <li><a class="dropdown-item" href="#">Прайс</a></li>
+    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+</div>
+			</div>
 		</nav>
 	</header>
 
 
 	<section class="main"> 
-		<div class="maint">
-			<h1>Привет<br>Я Андрей Браун</h1>
-			<h4>Фулл стек веб - разроботчик</h4>
-			<input type="Button" value="Обо мне">
-			<input type="Button" value="Мои работы">
+		<div class="container h-100">
+				<div class="row align-items-center h-100">
+							<div class="col-lg-6 mt-5 pt-5">
+								<div class="maint mt-5">
+								<h1>Привет<br>Я Андрей Браун</h1>
+								<h4>Фулл стек веб - разроботчик</h4>
+								<input type="Button" value="Обо мне">
+								<input type="Button" value="Мои работы">
+								</div>
+							</div>
+				</div>
+			</div>
+			
+
 		</div>
 	</section>
 	
 	<div class="information1">
-			<h3>Обо мне</h3>
-			<img class="line" src="img/cherta.png" alt=""> <br>
-			<img id="FotoB" src="img/фотка1.png">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-			<input type="Button" value="Скачать резюме">
+		<div class="container h-100">
+			<div class="row align-items-center h-100">
+				<div class="col-lg-12">
+					<h3>Обо мне</h3>
+					<img class="line" src="img/cherta.png" alt=""> <br>
+					<img id="FotoB" src="img/фотка1.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+					<input type="Button" value="Скачать резюме">
+				</div>
+			</div>
+		</div>
 	</div>
 
 
 	<div class="information2">
-		<div class="info2t">
-			<div class="title2">
-				<h3>Что я умею</h3>
-				<img class="line" src="img/cherta.png" alt="">
+			<div class="container h-100">
+			<div class="row align-items-center h-100">
+				<div class="col-lg-12">
+					<div class="info2t">
+					<div class="title2">
+					<h3>Что я умею</h3>
+					<img class="line" src="img/cherta.png" alt="">
+				</div>
+				<ul class="VebO">
+					<li>
+							<img src="img/ноут.png" alt="">
+							<h5>Веб-дизайн</h5>
+							<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+					</li>
+
+					<li>
+							<img src="img/знак.png" alt="">
+							<h5>Разработка</h5>
+							<p>Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.</p>
+					</li>
+
+
+					<li>
+							<img src="img/ракета.png" alt="">
+							<h5>Сео-Оптимизация</h5>
+							<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</li>
+
+
+					<li>
+							<img src="img/граммофон.png" alt="">
+							<h5>Маркетинг</h5>
+							<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .</p>
+					</li>
+				</ul>
 			</div>
-			<ul class="VebO">
-				<li>
-						<img src="img/ноут.png" alt="">
-						<h5>Веб-дизайн</h5>
-						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-				</li>
-
-				<li>
-						<img src="img/знак.png" alt="">
-						<h5>Разработка</h5>
-						<p>Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.</p>
-				</li>
-
-
-				<li>
-						<img src="img/ракета.png" alt="">
-						<h5>Сео-Оптимизация</h5>
-						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-				</li>
-
-
-				<li>
-						<img src="img/граммофон.png" alt="">
-						<h5>Маркетинг</h5>
-						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .</p>
-				</li>
-			</ul>
+			</div>
+			</div>
 		</div>
 	</div>
 
@@ -232,5 +275,6 @@
 			<li><img src="img/ин1.png" alt=""></li>
 	</ul>
 	</div>
+	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
